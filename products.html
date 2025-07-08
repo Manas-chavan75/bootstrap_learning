@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    body {
+      background-color: #fdf6f0;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 30px;
+      font-weight: bold;
+    }
+    .card {
+      margin-bottom: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card-img-top {
+      height: 180px;
+      object-fit: cover;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    .card-body {
+      text-align: center;
+    }
+    .price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #6f4e37;
+    }
+  </style>
+</head>
+<body>
+     <!-- header start -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-warning-subtle"
+        data-bs-theme="light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/ccd.jpg" alt="Logo" width="30" height="24"
+              class="d-inline-block align-text-top">CCD</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page"
+                  href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Gallery
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="photo.html">photo</a></li>
+                  <li><a class="dropdown-item" href="video.html">video</a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"
+                  href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active bg-danger" href="products.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header end -->
+      <!-- slider section start -->
+      <section>
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade"  data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3" aria-label="Slide 1"></button>
+            <!-- <button type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="6" aria-label="Slide 1"></button> -->
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/slider/banner10.jpg" class="d-block w-100"
+                alt="...">
+              <div class="carousel-caption">
+                <h5 style="background-color:#0000ff30">cafe coffe day</h5>
+                <p>Some representative placeholder content for the first
+                  slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/slider/banner10.jpg" class="d-block w-100"
+                alt="...">
+              <div class="carousel-caption">
+                <h5 style="background-color:#0000ff30">cafe coffe day</h5>
+                <p>Some representative placeholder content for the second
+                  slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/slider/banner10.jpg" class="d-block w-100"
+                alt="...">
+              <div class="carousel-caption">
+                <h5 style="background-color:#0000ff30">cafe coffe day</h5>
+                <p>Some representative placeholder content for the third
+                  slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/slider/banner10.jpg" class="d-block w-100"
+                alt="...">
+              <div class="carousel-caption">
+                <h5 style="background-color:#0000ff30">cafe coffe day</h5>
+                <p>Some representative placeholder content for the third
+                  slide.</p>
+              <!-- </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/slider/baneer 4.jpg" class="d-block w-100"
+                alt="...">
+              <div class="carousel-caption">
+                <h5 style="background-color:#0000ff30">cafe coffe day</h5>
+                <p>Some representative placeholder content for the third
+                  slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/slider/baneer 4.jpg" class="d-block w-100"
+                alt="...">
+              <div class="carousel-caption">
+                <h5 style="background-color:#0000ff30">cafe coffe day</h5> -->
+                <p>Some representative placeholder content for the third
+                  slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button"
+            data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button"
+            data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- slider section end -->
+
+      <!-- product section start -->
+    <section>
+       <div class="container mt-4">
+    <h2>Our Café Products</h2>
+    <div class="row mt-4">
+      
+      <!-- Product 1 -->
+      <div class="col-md-4 mb-5">
+        <div class="card">
+          <img src="images/espresso.jpg" class="card-img-top" alt="Espresso">
+          <div class="card-body">
+            <h5 class="card-title">Espresso</h5>
+            <p class="card-text">Strong and rich black coffee made from finely ground beans.</p>
+            <p class="price">₹80</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/cappuccino.jpg" class="card-img-top" alt="Cappuccino">
+          <div class="card-body">
+            <h5 class="card-title">Cappuccino</h5>
+            <p class="card-text">Espresso with steamed milk and foam, topped with chocolate.</p>
+            <p class="price">₹120</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/muffin.jpg" class="card-img-top" alt="Blueberry Muffin">
+          <div class="card-body">
+            <h5 class="card-title">Blueberry Muffin</h5>
+            <p class="card-text">Freshly baked soft muffin filled with juicy blueberries.</p>
+            <p class="price">₹60</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/cold-brew.jpg" class="card-img-top" alt="Cold Brew">
+          <div class="card-body">
+            <h5 class="card-title">Cold Brew</h5>
+            <p class="card-text">Smooth and refreshing coffee brewed cold for 12 hours.</p>
+            <p class="price">₹130</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/veg-sandwich.jpg" class="card-img-top" alt="Veg Sandwich">
+          <div class="card-body">
+            <h5 class="card-title">Veg Sandwich</h5>
+            <p class="card-text">Toasted sandwich with fresh vegetables and cheese.</p>
+            <p class="price">₹90</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/lava-cake.jpg" class="card-img-top" alt="Chocolate Lava Cake">
+          <div class="card-body">
+            <h5 class="card-title">Chocolate Lava Cake</h5>
+            <p class="card-text">Warm chocolate cake with a rich, gooey center.</p>
+            <p class="price">₹110</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+    </section>
+    <!-- product section end -->
+
+      
+      <!-- Footer Start -->
+      <footer class="bg-dark text-light pt-5 pb-4 mt-5">
+        <div class="container">
+          <div class="row">   
+
+            <!-- Contact Info -->
+            <div class="col-md-4 mb-4">
+              <h5 class="fw-bold">Contact Us</h5>
+              <p class="mb-1"><i class="bi bi-telephone-fill me-2">Contact=</i> +91
+                9876543210</p>
+              <p class="mb-1"><i class="bi bi-envelope-fill me-2">e-mail=</i>
+                @cafecoffeeday.com</p>
+              <p class="mb-1"><i class="bi bi-geo-alt-fill me-2">Address=</i>123,
+                Coffee Street, Pune, India</p>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="col-md-4 mb-4">
+              <h5 class="fw-bold">Disclaimer</h5>
+              <p class="small">
+                All logos, trademarks, and images are property of their
+                respective owners. This website is intended for informational
+                purposes only and is not affiliated with any third-party brand.
+              </p>
+            </div>
+
+            <!-- Social Media -->
+            <div class="col-md-4 mb-4 text-md-end">
+              <h5 class="fw-bold">Follow Us</h5>
+              <a href="#" class="text-light me-3 fs-4"><i
+                  class="bi bi-facebook">facebook</i></a>
+              <a href="#" class="text-light me-3 fs-4"><i
+                  class="bi bi-instagram">insta</i></a>
+              <a href="#" class="text-light me-3 fs-4"><i
+                  class="bi bi-twitter">twitter</i></a>
+            </div>
+
+          </div>
+
+          <!-- Copyright -->
+          <div class="row mt-4">
+            <div class="col text-center">
+              <p class="small mb-0">&copy; 2025 Cafe Coffee Day. All rights
+                reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer End -->
+
+    <script
+               src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
